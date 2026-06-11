@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Utiliser l'Extranet Formateur de DENDREO</title>
+
+<style>
+
+:root{
+    --apf-orange:#E6631D;
+    --apf-blue:#0B5D75;
+    --light:#f7f8fa;
+    --dark:#1f2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--dark);
+    line-height:1.6;
+    background:white;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(135deg,var(--apf-blue),#08465a);
+    color:white;
+    padding:60px 0;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    width:220px;
+    background:white;
+    border-radius:12px;
+    padding:15px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:2.8rem;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+.badges{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.badge{
+    background:rgba(255,255,255,.15);
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.banner{
+    height:400px;
+    background:
+    linear-gradient(rgba(11,93,117,.65),rgba(11,93,117,.65)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+section{
+    padding:70px 0;
+}
+
+h2{
+    color:var(--apf-blue);
+    margin-bottom:25px;
+    padding-left:15px;
+    border-left:6px solid var(--apf-orange);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--light);
+    padding:25px;
+    border-radius:12px;
+}
+
+.card h3{
+    color:var(--apf-blue);
+    margin-bottom:10px;
+}
+
+.objectifs ul{
+    padding-left:20px;
+}
+
+.objectifs li{
+    margin-bottom:10px;
+}
+
+details{
+    background:#fafafa;
+    border-left:5px solid var(--apf-orange);
+    margin-bottom:12px;
+    border-radius:8px;
+    padding:15px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:var(--apf-blue);
+}
+
+.btn-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--apf-orange);
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:12px;
+}
+
+.accessibilite{
+    background:#f4f7f9;
+    border-left:6px solid var(--apf-orange);
+    padding:25px;
+    border-radius:12px;
+}
+
+footer{
+    background:var(--apf-blue);
+    color:white;
+    padding:40px 0;
+    text-align:center;
+}
+
+footer a{
+    color:white;
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+    font-size:2rem;
+}
+
+.logo{
+    width:180px;
+}
+
+.banner{
+    height:250px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="header-content">
+
+<img src="logo.png"
+     alt="Logo APF Formation"
+     class="logo">
+
+<div class="hero-text">
+
+<h1>Utiliser l'Extranet Formateur de DENDREO</h1>
+
+<p>
+Maîtrisez l'Extranet Formateur Dendreo afin de préparer,
+animer et clôturer vos formations avec efficacité,
+tout en respectant les exigences du référentiel Qualiopi.
+</p>
+
+<div class="badges">
+<div class="badge">⏱️ 1h30</div>
+<div class="badge">💻 À distance</div>
+<div class="badge">📋 Qualiopi</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="banner"></div>
+
+<section>
+
+<div class="container">
+
+<h2>Informations pratiques</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Date</h3>
+<p>1er janvier 2027</p>
+</div>
+
+<div class="card">
+<h3>Horaires</h3>
+<p>14h00 - 15h30</p>
+</div>
+
+<div class="card">
+<h3>Modalité</h3>
+<p>Formation à distance</p>
+</div>
+
+<div class="card">
+<h3>Adresse administrative</h3>
+<p>
+9-11 rue Clisson<br>
+75013 Paris
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="objectifs">
+
+<div class="container">
+
+<h2>Objectifs pédagogiques</h2>
+
+<ul>
+<li>Accéder aux informations de préparation de la formation.</li>
+<li>Faire émarger les participants et émarger soi-même en mode digitalisé.</li>
+<li>Utiliser les différents dossiers de stockage et de partage de documents.</li>
+<li>Compléter les évaluations et le bilan de fin de formation.</li>
+<li>Déposer sa facture et sa note de frais.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Programme détaillé</h2>
+
+<details open>
+<summary>Présentation de l'espace Extranet Formateur</summary>
+<p>
+Découverte des menus et des principales fonctionnalités.
+</p>
+</details>
+
+<details>
+<summary>Préparer sa formation</summary>
+<p>
+Accès à la liste des participants, questionnaires de besoins,
+attentes et auto-positionnements.
+</p>
+</details>
+
+<details>
+<summary>Gestion documentaire</summary>
+<p>
+Utilisation des différents espaces de stockage et de partage
+selon les destinataires.
+</p>
+</details>
+
+<details>
+<summary>Émargement numérique</summary>
+<p>
+Signature des participants, prolongations,
+gestion des situations particulières.
+</p>
+</details>
+
+<details>
+<summary>Évaluations et qualité</summary>
+<p>
+Quiz, évaluations, bilan formateur,
+gestion des tickets qualité et suivi des améliorations.
+</p>
+</details>
+
+<details>
+<summary>Facturation</summary>
+<p>
+Dépôt des factures et notes de frais,
+points de vigilance administratifs.
+</p>
+</details>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Téléchargements</h2>
+
+<div class="btn-container">
+
+<a href="programme.pdf"
+   class="btn"
+   target="_blank">
+Télécharger le programme
+</a>
+
+<a href="formation-en-bref.pdf"
+   class="btn"
+   target="_blank">
+La formation en bref
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Localisation</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=9-11%20Rue%20Clisson%2075013%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Accessibilité et inclusion</h2>
+
+<div class="accessibilite">
+
+<p>
+Cette formation est accessible aux personnes en situation de handicap.
+Pour toute demande d'aménagement ou de compensation,
+contactez APF Formation avant le démarrage de la session.
+</p>
+
+<br>
+
+<p>
+<a href="https://formation.apf.asso.fr/certification-habilitation-et-accessibilite/"
+target="_blank">
+Consulter la politique d'inclusion et de gestion du handicap
+</a>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>Contact formation</h3>
+
+<p>
+Isabelle AKAR<br>
+isabelle.akar@apf.asso.fr<br>
+07 88 94 65 60
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
